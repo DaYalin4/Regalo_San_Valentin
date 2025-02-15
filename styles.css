@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffcccb; /* Fondo rosa claro */
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ff1493; /* Color de texto rosa oscuro */
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #ff1493;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #ff69b4;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Corazones animados */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.heart {
+    position: absolute;
+    color: #ff1493;
+    font-size: 20px;
+    animation: float 3s infinite ease-in-out;
+}
